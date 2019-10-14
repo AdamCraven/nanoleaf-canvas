@@ -25,6 +25,7 @@ func getAuthToken() (string, string) {
 }
 
 func main() {
+	fmt.Println("Getting token")
 	status, body := getAuthToken()
 
 	if status != "200 OK" {
